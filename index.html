@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bee's Knees</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <div id="disclaimerModal" class="modal">
+        <div class="modal-content">
+            <h2>Game Rules</h2>
+            <p>
+                A nasty slingshot wants to knock your bees out of their homes. Drag each bee into an empty honeycomb cell before the time runs out!
+            </p>
+            <p>
+                Watch out! The slingshot will randomly fire at the beehive, and any bee it hits will be knocked out.
+            </p>
+            <button id="acceptBtn" class="btn">Accept & Play</button>
+        </div>
+    </div>
+
+    <div id="gameContainer" class="game-container hidden">
+        
+        <div id="timer" class="timer">3:00</div>
+        <button id="escapeBtn" class="escape-btn hidden">Go to safety!</button>
+
+        <div id="gameArea" class="game-area">
+
+            <div id="honeycombContainer"></div>
+            
+            <div id="beesContainer"></div>
+            
+        </div>
+        
+    </div>
+
+    <audio id="backgroundBuzz" src="https://assets.mixkit.co/sfx/preview/mixkit-bee-buzzes-in-a-field-2346.mp3" loop></audio>
+    <audio id="beeVibration" src="https://assets.mixkit.co/sfx/preview/mixkit-small-bell-ding-1725.mp3"></audio>
+    <audio id="flyAway" src="https://assets.mixkit.co/sfx/preview/mixkit-wind-chime-bell-1608.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
